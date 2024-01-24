@@ -45,8 +45,8 @@ Introduction:
 
 JavaScript, a versatile programming language widely used for web development, owes much of its power to its ability to handle complex data structures efficiently. One of the fundamental building blocks in JavaScript is the object, a versatile and dynamic entity that allows developers to organize and manipulate data seamlessly. In this blog post, we will delve into the fascinating world of objects in JavaScript and explore how they are internally represented, uncovering the magic that makes them such a crucial aspect of the language.
 
-The Essence of Objects in JavaScript:
-At its core, an object in JavaScript is a collection of key-value pairs, where each key is a string (or Symbol) and each value can be any data type, including other objects. This flexible structure enables developers to model real-world entities and relationships in a way that is both intuitive and powerful.
+Objects in JavaScript:
+An object in JavaScript is a collection of key-value pairs, where each key is a string and each value can be any data type, including other objects. This flexible structure enables developers to model real-world entities and relationships in a way that is both intuitive and powerful.
 
 Creating Objects:
 Objects in JavaScript can be created using object literals, constructors, or the Object constructor function. For example:
@@ -60,13 +60,13 @@ function Car(make, model) {
   this.make = make;
   this.model = model;
 }
-const myCar = new Car('Toyota', 'Camry');
+const myCar = new Car('Hyundai', 'Verna');
 
 Internal Representation of Objects:
 Understanding how JavaScript internally represents objects is crucial for optimizing code and improving performance. 
 
 Properties and Methods:
-Properties of an object are stored as key-value pairs in a property table. Each property has a unique identifier (property key) associated with it. Methods, which are functions defined within an object, are also stored as properties.
+Properties of an object are stored as key-value pairs in a property table. Each property has a unique identifier associated with it. Methods, which are functions defined within an object, are also stored as properties.
 
 Hidden Classes:
 JavaScript engines use a concept known as hidden classes to optimize property access and assignment. When an object is created, the engine assigns it a hidden class based on the properties and methods it contains. Subsequent objects with the same structure share the same hidden class, leading to faster property access.
@@ -75,7 +75,7 @@ Prototypes and Inheritance:
 Objects in JavaScript can inherit properties and methods from other objects through a mechanism called prototypes. Each object has a prototype, and the chain of prototypes forms the prototype chain. This enables efficient reuse of code and supports the concept of inheritance.
 
 Performance Considerations:
-Understanding the internal representation of objects has practical implications for writing efficient and performant JavaScript code. Here are some tips:
+Understanding the internal representation of objects has practical implications for writing efficient and performant JavaScript code. 
 
 Property Access:
 Accessing properties that are closer to the beginning of the prototype chain is faster. Minimize prototype chain traversal for frequently accessed properties.
